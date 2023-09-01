@@ -180,7 +180,7 @@ input, select, textarea {
 		font-weight: 700;
 		line-height: 1.3;
 		margin: 0 0 0 0;
-		letter-spacing: -0.035em;
+		letter-spacing: 0em;
 	}
 
 		h1 a {
@@ -218,6 +218,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.5em;
+		letter-spacing: 0.15em;
 	}
 
 	h3 {
@@ -316,7 +317,8 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 3em 0;
+			margin: 2em 0;
+			border-bottom: solid 1.5px #c9c9c9;
 		}
 
 		hr.new1 {
@@ -3368,32 +3370,26 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		display: flex;
-		padding-top: 75px;
 	}
 
 	#wrapper > * > .intro > h3{
-		position: absolute;
-		align-items: center;
-		top: 5px;
-		text-align: justify;
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		margin: 0 0 2em 0 ;
 	}
 
 	#wrapper > * > * > p{
-		padding-left: 50px;
+		padding-left: 20px;
 		text-align: justify;
-		margin: 4em 0 3em 0;
+		margin: 0;
 	}
 
 	#wrapper > * > * > img {
 		position: relative;
 		display: block;
-		top: 30px;;
-		bottom:0;
 	}
 
-	#wrapper > * > * > h3{
-		margin: 2em 0 2em 0 ;
-	}
 		@media screen and (max-width: 736px) {
 
 			#wrapper > * > .inner {
