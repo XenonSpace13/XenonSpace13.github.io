@@ -6,16 +6,6 @@
 
 (function($) {
 
-	var r = document.querySelector(':root');
-
-	$(function() {
-		setInterval(function() {
-		  $("block")                             // get all <h2>s
-			.filter(":onScreen")
-			.css("height", "calc(width)") // give them a red background
-		}, 10)                              // repeat every second
-	  })
-
 	var	$window = $(window),
 		$body = $('body');
 
