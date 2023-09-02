@@ -3,12 +3,18 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-function getAttributeImgWidth() {
-	var width = main.getAttribute("width");
-	return 1
-}
 
 (function($) {
+
+	var r = document.querySelector(':root');
+
+	$(function() {
+		setInterval(function() {
+		  $("block")                             // get all <h2>s
+			.filter(":onScreen")
+			.css("height", "calc(width)") // give them a red background
+		}, 10)                              // repeat every second
+	  })
 
 	var	$window = $(window),
 		$body = $('body');
